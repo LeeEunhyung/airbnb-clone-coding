@@ -1,11 +1,171 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>숙소, 체험, 장소를 모두 한 곳에서 - 에어비앤비</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div>
+        <nav style="display: flex; justify-content: space-between;">
+            <div>icon</div>
+            <div>
+                <input type="button" value="숙소" />
+                <input type="button" value="체험" />
+                <input type="button" value="온라인 체험" />
+            </div>
+            <div style="display: flex;">
+                <input type="button" value="호스트 되기" />
+                <input type="button" value="언어" />
+                <input type="button" value="마이페이지" />
+            </div>
+        </nav>
+        <nav style="display: flex; justify-content: center;">
+            <input type="button" value="위치" />
+            <input type="button" value="체크인" />
+            <input type="button" value="체크아웃" />
+            <input type="button" value="인원" />
+            <input type="button" value="검색" />
+        </nav>
+        <div>
+            <h1>이제, 여행은<br />가까운 곳에서</h1>
+            <input type="button" value="근처의 숙소 둘러보기" />
+        </div>
+    </div>
+
+    <section  style="display: flex; justify-content: space-around;">
+        <article>
+            <img src="/images/bucheon.jpg">
+            <span>부천시<br />차로 45분 거리</span>
+        </article>
+        <article>
+            <img src="/images/incheon.jpg">
+            <span>인천<br />차로 45분 거리</span>
+        </article>
+        <article>
+            <img src="/images/daejeon.jpg">
+            <span>대전<br />차로 2시간 거리</span>
+        </article>
+        <article>
+            <img src="/images/busan.jpg">
+            <span>부산<br />차로 5시간 거리</span>
+        </article>
+        <article>
+            <img src="/images/sokcho.jpg">
+            <span>속초시<br />차로 3시간 거리</span>
+        </article>
+        <article>
+            <img src="/images/daejeon.jpg">
+            <span>대구<br />차로 3.5시간 거리</span>
+        </article>
+    </section>
+    <section>
+        <h2>어디에서나, 여행은 살아보는 거야!</h2>
+        <div style="display: flex; justify-content: space-around;">
+            <article>
+                <img src="/images/whole-house.jpg">
+                <p>집 전체</p>
+            </article>
+            <article>
+                <img src="/images/rural-house.jpg">
+                <p>통나무집 및 전원주택</p>
+            </article>
+            <article>
+                <img src="/images/unique-space.jpg">
+                <p>독특한 공간</p>
+            </article>
+            <article>
+                <img src="/images/companion-animal.jpg">
+                <p>반려동물 환영</p>
+            </article>
+        </div>
+    </section>
+    <section>
+        <div style="display: flex; justify-content: space-around;">
+            <div>
+                <h2>온라인 체험</h2>
+                <p>전문가가 진행하고 모두 함께 즐기는 참여형 액티비티</p>
+            </div>
+            <input type="button" value="모두 둘러보기" />
+        </div>
+        <article>
+            <img src="/images/online-xiaolongbao.jpg">
+            <span>상하이샤오룽바오 만드는 법 배우기</span>
+        </article>
+        <article>
+            <img src="/images/online-graffiti.jpg">
+            <span>그라피티와 거리 예술에 반영된 여성상 탐구</span>
+        </article>
+        <article>
+            <img src="/images/online-magician.jpg">
+            <span>뉴욕 마술사와 백스테이지 구경하기</span>
+        </article>
+        <article>
+            <img src="/images/online-cocktail.jpg">
+            <span>수제 칵테일을 마시며 젠더에 관해 토론하기</span>
+        </article>
+    </section>
+
+    <section>
+        <h2>수백만 명에 이르는 에어비앤비 호스트 커뮤니티의 일원이 되어보세요.</h2>
+        <article>
+            <img src="/images/become-a-host.jpg">
+            <span>숙소 호스트 되기</span>
+        </article>
+        <article>
+            <img src="/images/become-a-online-host.jpg">
+            <span>온라인 체험 호스팅하기</span>
+        </article>
+        <article>
+            <img src="/images/become-a-experience-host.jpg">
+            <span>체험 호스팅하기</span>
+        </article>
+    </section>
+    <nav style="display: flex; justify-content: space-around;">
+        <div style="display: flex; flex-direction: column;">
+            <p>소개</p>
+            <a>에어비앤비 이용 방법</a>
+            <a>뉴스룸</a>
+            <a>투자자 정보</a>
+            <a>에어비앤비 플러스</a>
+            <a>에어비앤비 Luxe</a>
+            <a>호텔투나잇</a>
+            <a>에어비앤비 비즈니스 프로그램</a>
+            <a>올림픽</a>
+            <a>채용정보</a>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <p>커뮤니티</p>
+            <a>다양성 및 소속감</a>
+            <a>접근성</a>
+            <a>에어비앤비 어소시에이트</a>
+            <a>구호 인력을 위한 숙소</a>
+            <a>친구 초대하기</a>
+            <a>Airbnb.org</a>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <p>호스팅하기</p>
+            <a>숙소 호스팅</a>
+            <a>온라인 체험 호스팅하기</a>
+            <a>체험 호스팅하기</a>
+            <a>책임감 있는 호스팅</a>
+            <a>자료 센터</a>
+            <a>커뮤니티 센터</a>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <p>에어비앤비 지원</p>
+            <a>에어비앤비의 코로나19 대응 방안</a>
+            <a>도움말 센터</a>
+            <a>예약 취소 옵션</a>
+            <a>에어비앤비 이웃 민원 지원</a>
+            <a>신뢰와 안전</a>
+        </div>
+    </nav>
+    <footer style="display: flex; justify-content: space-around;">
+        <p>© 2020 Airbnb, Inc. All rights reserved · <a>개인정보 처리방침</a> · <a>이용약관</a> · <a>사이트맵</a> · <a>한국의 변경된 환불 정책</a> · <a>회사 세부 정보</a></p>
+        <div>
+            <a>한국어(kr)</a>
+            <a>KRW</a>
+        </div>
+    </footer>
   </body>
 </html>
