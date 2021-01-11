@@ -1,10 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const mysql = require('mysql2');
-const dbconfig = require('./config/dbconfig');
-const connection = mysql.createConnection(dbconfig);
-
-connection.connect();
+const connection = require('./config/dbconfig');
 
 router.get('/', function(req, res, next) {
     res.render('login');
