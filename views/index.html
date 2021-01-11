@@ -4,35 +4,36 @@
     <title>숙소, 체험, 장소를 모두 한 곳에서 - 에어비앤비</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
+
   <body>
-    <div>
-        <nav style="display: flex; justify-content: space-between;">
-            <div>icon</div>
-            <div>
+    <main>
+        <nav id="top-nav">
+            <a id="icon" href="/">airbnb</a>
+            <div class="search-nav">
                 <input type="button" value="숙소" />
                 <input type="button" value="체험" />
-                <input type="button" value="온라인 체험" />
+                <input type="button" value="온라인 체험" onclick="location.href='/login'" />
             </div>
-            <div style="display: flex;">
-                <input type="button" value="호스트 되기" />
-                <input type="button" value="언어" />
-                <input type="button" value="마이페이지" onclick="location.href='/login'"/>
+            <div class="user-nav">
+                <a href="/">호스트 되기</a>
+                <a href="/">언어</a>
+                <a id="mypage" href="/login">마이페이지</a>
             </div>
         </nav>
-        <nav style="display: flex; justify-content: center;">
-            <input type="button" value="위치" />
-            <input type="button" value="체크인" />
-            <input type="button" value="체크아웃" />
-            <input type="button" value="인원" />
-            <input type="button" value="검색" />
+        <nav id="bottom-nav">
+            <button>위치<br />어디로 여행가세요?</button>
+            <button>체크인<br />날짜 추가</button>
+            <button>체크아웃<br />날짜 추가</button>
+            <button>인원<br />게스트 추가</button>
+            <button>검색</button>
         </nav>
         <div>
             <h1>이제, 여행은<br />가까운 곳에서</h1>
             <input type="button" value="근처의 숙소 둘러보기" />
         </div>
-    </div>
+    </main>
 
-    <section  style="display: flex; justify-content: space-around;">
+    <section  class="recommends" style="display: flex; justify-content: space-around;">
         <article>
             <img src="/images/incheon.jpg">
             <span>인천<br />차로 45분 거리</span>
@@ -68,7 +69,7 @@
     </section>
     <section>
         <h2>어디에서나, 여행은 살아보는 거야!</h2>
-        <div style="display: flex; justify-content: space-around;">
+        <div class="places" style="display: flex; justify-content: space-around;">
             <article>
                 <img src="/images/whole-house.jpg">
                 <p>집 전체</p>
